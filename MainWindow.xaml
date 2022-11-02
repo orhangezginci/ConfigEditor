@@ -8,7 +8,19 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="134,96,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="328" Width="656"/>
-        <TreeView Margin="10,143,686,10"/>
+        <TreeView x:Name="xmlTree" Margin="10,143,666,10">
+        <TreeViewItem Header="Config" IsExpanded="True">
+                <TreeViewItem Header="Servers" IsExpanded="True">
+                    <TreeViewItem Header="Server" />
+                    <TreeViewItem Header="Server" />
+                </TreeViewItem>
+
+                <TreeViewItem Header="Clients" IsExpanded="True"/>
+                    <TreeViewItem Header="Client" />
+                <TreeViewItem Header="Client" />
+       
+        </TreeViewItem>
+        </TreeView>
         <TextBox HorizontalAlignment="Left" Margin="10,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="104"/>
     </Grid>
 </Window>

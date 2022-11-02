@@ -25,4 +25,5 @@ namespace ConfigEditor
             InitializeComponent();
         }
     }
-}
+
+  }
